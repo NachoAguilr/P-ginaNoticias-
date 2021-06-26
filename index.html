@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>La Mosquitera</title>
+	<link rel="stylesheet" href="Css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet"> 
+</head>
+
+<header >
+
+	<a href="index.html">
+		<h1 class="encabezado">La Mosquitera</h1>
+	</a>
+
+
+<!---Menú Principal--->
+		<nav>
+			<ul>
+				<a href="Secciones/Noticias.html">
+					<li class="menuppal">Noticias</li>
+				</a>	
+				<a href="Secciones/Radio.html">
+					<li class="menuppal">Radio En Vivo</li>
+				</a>
+				<a href="Secciones/Revista.html">
+					<li class="menuppal">Revista</li>
+				</a>
+				<a href="Secciones/Audiovisual.html">
+					<li class="menuppal">Audiovisual</li>
+				</a>
+			</ul>
+		</nav>
+</header>
+<body>
+	
+	<!---Sección Noticias--->		
+	<h2>Provinciales</h2>
+		<div class="contenedorNoticia__grid">		
+				
+			<div class="noti1">
+				<a href="#">
+						<img src="Img/MUEJRES-578x330.png" alt="noticias1" class="noti__img">
+				</a>	
+				<h3 class="article__titulo">Noticias 1</h3>
+				<p class="article__bajada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis atque quibusdam saepe, incidunt culpa doloremque corrupti in sunt, totam pariatur. Facere amet minima consequatur omnis quas laborum assumenda cum?
+				</p>
+			</div>
+			
+			<div class="noti2">
+				<a href="#" >
+					<img src="Img/Covid.png" alt="noticias2" class="noti__img">
+				</a>
+				<h3 class="article__titulo">Noticias 2</h3>
+				<p class="article__bajada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis atque quibusdam saepe, incidunt culpa doloremque corrupti in sunt, totam pariatur. Facere amet minima consequatur omnis quas laborum assumenda cum?
+				</p>
+			</div>
+	
+			<div class="noti3">
+				<a href="#" >
+					<img src="Img/noti3.jpg" alt="noticias3" class="noti__img">
+				</a>	
+				<h3 class="article__titulo">Noticias 3</h3>
+				<p class="article__bajada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis atque quibusdam saepe, incidunt culpa doloremque corrupti in sunt, totam pariatur. Facere amet minima consequatur omnis quas laborum assumenda cum?
+				</p>
+			</div>
+		</div>
+	<!---Apartado de Notas de la Revista--->
+	<h2>Revista</h2>
+		<div class="contenedor">		
+			<div class="conenedor__article">	
+				<div class="articlerevista">
+					<p class="articlerevista__bajada">
+					<strong>Revista1</strong><br>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis atque quibusdam saepe, incidunt culpa doloremque corrupti in sunt, totam pariatur. Facere amet minima consequatur omnis quas laborum assumenda cum?
+					</p>
+					<a href="#">
+						<img src="Img/revista1.jpg" alt="noticias1" class="article__img">
+					</a>
+				
+				
+					<p class="articlerevista__bajada">
+					<strong>Revista2</strong> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis atque quibusdam saepe, incidunt culpa doloremque corrupti in sunt, totam pariatur. Facere amet minima consequatur omnis quas laborum assumenda cum?
+					</p>
+					<a href="#" >
+						<img src="Img/revista2.jpg" alt="noticias1" class="article__img">
+					</a>
+				</div>
+			</div>
+		</div>
+	
+	<!---Apartado de Notas Especiales--->
+	<h2>Varias</h2>
+		
+			<div class="contenedorVarias__grid">		
+				<div class="cultura">
+					
+					<h3 class="article__titulo">Cultura</h3>
+					<p class="article__bajada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis atque quibusdam saepe, incidunt culpa doloremque corrupti in sunt, totam pariatur. Facere amet minima consequatur omnis quas laborum assumenda cum?
+					</p>
+						<a href="#">
+						<img src="Img/cultura.jpeg" alt="noticias1" class="article__img">
+						</a>	
+				</div>	
+				
+				<div class="ambiente">
+					<h3 class="article__titulo">Ambiente</h3>
+					<p class="article__bajada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis atque quibusdam saepe, incidunt culpa doloremque corrupti in sunt, totam pariatur. Facere amet minima consequatur omnis quas laborum assumenda cum?
+					</p>
+					<a href="#" >
+						<img src="Img/ambiente.jpeg" alt="noticias2" class="article__img">
+					</a>
+				</div>
+					
+					<div class="genero">		
+						<h3 class="article__titulo">Género</h3>
+						<p class="article__bajada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis atque quibusdam saepe, incidunt culpa doloremque corrupti in sunt, totam pariatur. Facere amet minima consequatur omnis quas laborum assumenda cum?
+						</p>
+						<a href="#" >
+							<img src="Img/género.jpeg" alt="noticias2" class="article__img">
+						</a>
+					</div>	
+			</div>
+			
+	
+
+	<!---Formulario de Suscripción--->
+	<div class="suscripcion">
+		<form action="/action_page.php" method="POST" enctype="multipart/form-data">
+				<fieldset>
+					<legend>Suscripción</legend>
+						<label for="nombreyApellido">Nombre y Apellido</label>
+						<input type="text" name="nombreyapellido"	maxlength="100"><br>
+						
+						<label for="correoElectrónico">Correo Electrónico</label>
+						<input type="text" name="correoElectrónico" maxlength="100"><br>
+
+						<label for="ciudad">Ciudad</label>
+						<input type="text" name="ciudad" maxlength="50"><br>
+
+						<label for="boletín">¿Querés recibir boletines diarios?</label>
+						<div>Sí</div>
+						<input type="radio" name="boletín" value="si">
+						<div>No</div>
+						<input type="radio" name="boletín" value="no">
+						<br>
+						
+						<input type="submit" name="submit" value="Enviar">	
+						<input type="reset" name="reset" value="Limpiar">
+						<br>
+				</fieldset>	
+			</form><br>
+	</div>
+
+
+
+</body>
+<footer>
+	Sitio Creado por Nacho
+</footer>
+</html>

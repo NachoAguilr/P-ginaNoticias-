@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Fuentes*/
+h1 h2 h3 {
+    font-family: 'Stint Ultra Condensed', cursive;
+}
+p { 
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 13px; 
+    letter-spacing: 1px;
+    line-height: 12px; 
+    text-align: justify;  
+  }
+
+/*Links del menú principal*/
+a {
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    color:blanchedalmond;
+}
+
+a:hover {
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    color:blanchedalmond;
+}
+
+h2 {
+    padding: 5px;
+}  
+
+/*Header*/
+.colorEncabezado {
+    color: black;
+}
+.colorEncabezado:hover {
+    color: black;
+}
+.encabezado {
+    background: linear-gradient(to bottom,#BF303C,black) ;
+    color:blanchedalmond;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font: size 3em;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+nav {
+   
+   background-color: black;
+   font-size: 1em; 
+}
+.menuppal {
+    display: inline;
+    margin: 100px;
+    padding: 4px;
+   
+}
+
+
+
+
+
+.contenedor { 
+    
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contenedor__article{
+    
+    margin: 70px 0;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:#F2F2F2;
+    border: 1px;
+    padding: 20px ;
+    margin-left: 5px;
+    
+
+}
+
+.article__img {
+    width: 220px;
+    height: 170px;
+    border-radius: 2px;
+    padding-right: 4px;
+    Margin: 2px;
+    transition: widht 1s, height 1s;
+}
+.article__img:hover {
+    width: 222px;
+    height: 172px;
+}
+/*Caja de noticias generales*/
+.contenedorNoticia__grid { 
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+    gridp-template-rows: 33% 33% auto;
+    grid-template-areas: 
+    "noti1 noti2 noti3"
+    "noti1 noti2 noti3";
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.article__titulo {
+    
+    font-size: 100%;
+    font-weight: normal;
+    margin-bottom: 5px;
+
+}
+
+.article__bajada {
+    line-height: 28px;
+   
+    margin-bottom: 10px;
+
+}
+.noti__img{
+    width: 100%;
+    height: 200px;
+    border-radius: 2px;
+    padding-right: 4px;
+    Margin: 2px;
+    transition: height 1s; 
+}
+.noti__img:hover{
+    
+    height: 205px;
+}
+.noti1{
+    grid-area: noti1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom,#F2F2F2,WHITE);
+    border: 1px;
+    padding: 20px ;
+   
+}
+.noti2{
+    grid-area: noti2; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom,#F2F2F2,WHITE);  
+    border: 1px;
+    padding: 20px ;
+   
+}
+.noti3{
+    grid-area: noti3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom,#F2F2F2,WHITE);
+    border: 1px;
+    padding: 20px ;
+   
+}
+/*Caja de Revista*/
+.articlerevista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:#140a0a;
+    border: 1px;
+    border-radius: 10px;
+    padding: 20px ;
+    margin: 5px;
+}
+
+.articlerevista__titulo {
+    
+    font-size: 100%;
+    font-weight: normal;
+    color:#ffffff;
+    margin-bottom: 5px;
+    margin-top: 10px;
+
+}
+
+.articlerevista__bajada {
+    line-height: 28px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+/*Caja de Notas Varias*/
+
+.contenedorVarias__grid { 
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gridp-template-rows: 50% 50%;
+    grid-template-areas: 
+    "cultura ambiente"
+    "cultura genero";
+    max-width: 1400px;
+    width: 100%;
+    height: 800px;
+    margin: 1px;
+   
+}
+.cultura{
+    grid-area: cultura;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:#F2F2F2;
+    border: 1px;
+    padding: 20px ;
+    margin-left: 5px;
+}
+.ambiente{
+    grid-area: ambiente; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:#F2F2F2;
+    border: 1px;
+    padding: 20px ;
+    margin-left: 5px;
+}
+.genero{
+    grid-area: genero;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:#F2F2F2;
+    border: 1px;
+    padding: 20px ;
+    margin-left: 5px;
+}
+
+
+/*Resto*/
+.suscripcion {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 1px;
+    padding: 1px;
+    background-color:#BF303C;
+
+    
+}
+
+footer {
+    max-width: 1400px;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px ;
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+
+}
+
+/*Radio en Vivo*/
+.contenedor__stream {
+margin: 70px;   
+}
+.stream{
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    background-color: crimson;
+}
+
+/* Audiovisual */
+.contenedor__video {
+    margin: none;
+    
+}
+.video {
+    background-color: #BF303C;
+    padding: 10px;
+}
+
+/*Media Query*/
+@media screen and (min-witdh:700px) {
+    .menuppal {
+        display:flex;
+        flex-wrap: none;
+        margin: 100px;
+        padding: 4px;
+    }
+    body{
+    background-color: black;
+   }     
+   h1 h2 h3 {
+    font-family: 'Stint Ultra Condensed', cursive;
+}
+p { 
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 9px; 
+    letter-spacing: 1px;
+   
+    text-align: justify;  
+  }
+a {
+    font-family: 'Titillium Web', sans-serif;
+
+}
+.contenedorNoticia__grid { 
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 100%;
+    gridp-template-rows: 33% 33% auto;
+    grid-template-areas: 
+    "noti1"
+    "noti2"
+    "noti3";
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.noti1{
+    grid-area: noti1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:#110a0a;
+    border: 1px;
+    padding: 20px ;
+    margin-left: 5px;
+}
+.noti2{
+    grid-area: noti2; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:#0e0b0b;
+    border: 1px;
+    padding: 20px ;
+    margin-left: 5px;
+}
+.noti3{
+    grid-area: noti3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:#180f0f;
+    border: 1px;
+    padding: 20px ;
+    margin-left: 5px;
+}
+}
+
